@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mauricio &amp; Ana Paola – 5 de Septiembre 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       PANTALLA DE BIENVENIDA
+       ══════════════════════════════════════════ -->
+  <div id="cover" class="cover">
+    <div class="cover-overlay"></div>
+    <img src="foto1-web.jpg" alt="" class="cover-bg-photo" />
+    <div class="cover-content">
+      <p class="cover-pre animate-fade-up">Estás invitado a nuestra boda</p>
+      <h1 class="cover-names animate-fade-up delay-1">
+        Mauricio <span>&amp;</span> Ana Paola
+      </h1>
+      <p class="cover-date animate-fade-up delay-2">5 · IX · 2026</p>
+      <div class="cover-divider animate-fade-up delay-3"></div>
+      <button class="cover-btn animate-fade-up delay-4" id="enterBtn">
+        <span>Dale click para ingresar</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       CONTENIDO PRINCIPAL
+       ══════════════════════════════════════════ -->
+  <main id="main" class="main hidden">
+
+    <!-- ─── GUARDA LA FECHA ─── -->
+    <section class="section section-date">
+      <div class="floral-line top"></div>
+      <div class="section-inner">
+        <p class="label reveal-text delay-0">Guarda la fecha</p>
+        <div class="big-date">
+          <span class="big-day reveal-text delay-1">05</span>
+          <span class="big-month reveal-text delay-2">Septiembre</span>
+          <span class="big-year reveal-text delay-3">2026</span>
+        </div>
+        <div class="ornament reveal-text delay-4">❧</div>
+        <p class="tagline reveal-text delay-5">Celebremos<br><em>Juntos</em></p>
+      </div>
+      <div class="floral-line bottom"></div>
+    </section>
+
+    <!-- ─── HERO: FOTO + NOMBRES ─── -->
+    <section class="section section-hero">
+      <div class="hero-photo-wrap">
+        <img src="foto2-web.jpg" alt="Mauricio y Ana Paola" class="hero-photo" />
+        <div class="hero-photo-overlay"></div>
+      </div>
+      <div class="hero-text reveal">
+        <p class="hero-nos">¡Nos casamos!</p>
+        <div class="hero-names">
+          <span class="name-groom">Mauricio</span>
+          <span class="name-and">y</span>
+          <span class="name-bride">Ana Paola</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── COUNTDOWN ─── -->
+    <section class="section section-countdown">
+      <p class="label reveal">Faltan</p>
+      <div class="countdown reveal" id="countdown">
+        <div class="count-item">
+          <span class="count-num" id="days">00</span>
+          <span class="count-label">DÍAS</span>
+        </div>
+        <div class="count-sep">:</div>
+        <div class="count-item">
+          <span class="count-num" id="hours">00</span>
+          <span class="count-label">HRS.</span>
+        </div>
+        <div class="count-sep">:</div>
+        <div class="count-item">
+          <span class="count-num" id="minutes">00</span>
+          <span class="count-label">MIN.</span>
+        </div>
+        <div class="count-sep">:</div>
+        <div class="count-item">
+          <span class="count-num" id="seconds">00</span>
+          <span class="count-label">SEG.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── PASES ─── -->
+    <section class="section section-passes">
+      <div class="passes-card reveal">
+        <p class="passes-pre">Hemos reservado un lugar para ti</p>
+        <p class="passes-name" id="guestName">Invitado Especial</p>
+        <div class="passes-divider"></div>
+        <div class="passes-count">
+          <span class="passes-num" id="guestCount">1</span>
+          <span class="passes-label">Pase(s)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CEREMONIA ─── -->
+    <section class="section section-event">
+      <div class="event-card reveal">
+        <div class="event-icon">
+          <!-- Iglesia minimalista -->
+          <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1.2" xmlns="http://www.w3.org/2000/svg">
+            <line x1="30" y1="4" x2="30" y2="12"/>
+            <line x1="26" y1="8" x2="34" y2="8"/>
+            <rect x="10" y="22" width="40" height="30" rx="1"/>
+            <path d="M10 22 L30 12 L50 22"/>
+            <rect x="24" y="36" width="12" height="16"/>
+            <rect x="14" y="26" width="8" height="8"/>
+            <rect x="38" y="26" width="8" height="8"/>
+            <path d="M24 30 L28 26 L32 30 L36 26 L40 30" stroke-width="0.8"/>
+          </svg>
+        </div>
+        <p class="event-title">Ceremonia</p>
+        <p class="event-place">
+          Parroquia<br><strong>La Resurrección</strong>
+        </p>
+        <p class="event-time">17:30 H</p>
+        <a href="https://maps.app.goo.gl/D93Cj66N2tjrSxxZA" target="_blank" rel="noopener" class="map-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Ver ubicación
+        </a>
+      </div>
+    </section>
+
+    <!-- ─── RECEPCIÓN ─── -->
+    <section class="section section-event alt">
+      <div class="event-card reveal">
+        <div class="event-icon">
+          <!-- Copas de brindis minimalistas -->
+          <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1.2" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 8 L14 26 Q14 34 22 34 Q30 34 30 26 L26 8 Z"/>
+            <line x1="22" y1="34" x2="22" y2="48"/>
+            <line x1="16" y1="48" x2="28" y2="48"/>
+            <path d="M34 8 L30 26 Q30 34 38 34 Q46 34 46 26 L42 8 Z"/>
+            <line x1="38" y1="34" x2="38" y2="48"/>
+            <line x1="32" y1="48" x2="44" y2="48"/>
+            <line x1="27" y1="12" x2="33" y2="15" stroke-width="0.8"/>
+          </svg>
+        </div>
+        <p class="event-title">Recepción</p>
+        <p class="event-place">
+          Salón<br><strong>Verde Manzana</strong>
+        </p>
+        <p class="event-time">19:00 H</p>
+        <a href="https://maps.app.goo.gl/mG6cyY1geFXKFNTS6" target="_blank" rel="noopener" class="map-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Ver ubicación
+        </a>
+      </div>
+    </section>
+
+    <!-- ─── NOSOTROS ─── -->
+    <section class="section section-nosotros">
+      <h2 class="section-title cursive reveal">Nosotros</h2>
+      <div class="nosotros-grid reveal">
+        <div class="nosotros-item wide">
+          <img src="foto3-web.jpg" alt="Mauricio y Ana Paola" />
+        </div>
+        <div class="nosotros-row">
+          <div class="nosotros-item vert">
+            <img src="foto4-web.jpg" alt="Mauricio y Ana Paola" />
+          </div>
+          <div class="nosotros-item vert">
+            <img src="foto5-web.jpg" alt="Mauricio y Ana Paola" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── ITINERARIO ─── -->
+    <section class="section section-itinerary">
+      <h2 class="section-title cursive reveal">Itinerario</h2>
+
+      <div class="timeline">
+
+        <div class="tl-item tl-left">
+          <div class="tl-icon reveal-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
+              <line x1="24" y1="3" x2="24" y2="9"/>
+              <line x1="20" y1="6" x2="28" y2="6"/>
+              <rect x="6" y="17" width="36" height="26" rx="1"/>
+              <path d="M6 17 L24 9 L42 17"/>
+              <rect x="18" y="30" width="12" height="13"/>
+              <rect x="9" y="21" width="8" height="7"/>
+              <rect x="31" y="21" width="8" height="7"/>
+            </svg>
+          </div>
+          <div class="tl-content">
+            <p class="tl-name">Ceremonia<br>Religiosa</p>
+            <p class="tl-time">17:30 H</p>
+          </div>
+          <div class="tl-dot"></div>
+        </div>
+
+        <div class="tl-item tl-right">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <p class="tl-name">Recepción<br>Social</p>
+            <p class="tl-time">19:00 H</p>
+          </div>
+          <div class="tl-icon reveal-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M14 6 L11 21 Q11 28 18 28 Q25 28 25 21 L22 6 Z"/>
+              <line x1="18" y1="28" x2="18" y2="40"/>
+              <line x1="12" y1="40" x2="24" y2="40"/>
+              <path d="M26 6 L23 21 Q23 28 30 28 Q37 28 37 21 L34 6 Z"/>
+              <line x1="30" y1="28" x2="30" y2="40"/>
+              <line x1="24" y1="40" x2="36" y2="40"/>
+              <line x1="22" y1="10" x2="27" y2="13" stroke-width="0.8"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="tl-item tl-left">
+          <div class="tl-icon reveal-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="8" y="6" width="26" height="34" rx="1"/>
+              <line x1="13" y1="14" x2="29" y2="14"/>
+              <line x1="13" y1="20" x2="29" y2="20"/>
+              <line x1="13" y1="26" x2="22" y2="26"/>
+              <path d="M30 28 Q36 22 40 26 Q36 32 30 38 L26 38 L26 34 Q28 30 30 28Z" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="tl-content">
+            <p class="tl-name">Ceremonia<br>Civil</p>
+            <p class="tl-time">20:00 H</p>
+          </div>
+          <div class="tl-dot"></div>
+        </div>
+
+        <div class="tl-item tl-right">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <p class="tl-name">Baile de<br>Novios</p>
+            <p class="tl-time">21:00 H</p>
+          </div>
+          <div class="tl-icon reveal-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
+              <circle cx="30" cy="8" r="3"/>
+              <path d="M30 11 L28 22 L22 26 L18 34"/>
+              <path d="M28 22 L32 28 L38 30"/>
+              <circle cx="18" cy="10" r="3"/>
+              <path d="M18 13 L20 22 L26 25"/>
+              <path d="M20 22 L16 28 L12 30"/>
+              <line x1="18" y1="34" x2="14" y2="42"/>
+              <line x1="18" y1="34" x2="22" y2="42"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="tl-item tl-left">
+          <div class="tl-icon reveal-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
+              <circle cx="24" cy="24" r="16"/>
+              <circle cx="24" cy="24" r="11"/>
+              <line x1="19" y1="18" x2="19" y2="30"/>
+              <line x1="29" y1="18" x2="29" y2="30"/>
+              <path d="M16 21 Q24 19 32 21"/>
+              <path d="M16 27 Q24 29 32 27"/>
+            </svg>
+          </div>
+          <div class="tl-content">
+            <p class="tl-name">Cena</p>
+            <p class="tl-time">21:30 H</p>
+          </div>
+          <div class="tl-dot"></div>
+        </div>
+
+        <div class="tl-item tl-right">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <p class="tl-name">A Bailar</p>
+            <p class="tl-time">22:30 H</p>
+          </div>
+          <div class="tl-icon reveal-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M8 20 Q14 14 20 18 Q26 22 32 16 Q38 10 44 14"/>
+              <path d="M8 28 Q14 22 20 26 Q26 30 32 24 Q38 18 44 22"/>
+              <line x1="36" y1="10" x2="44" y2="14"/>
+              <line x1="36" y1="18" x2="44" y2="22"/>
+              <circle cx="36" cy="10" r="2" fill="currentColor"/>
+              <circle cx="36" cy="18" r="2" fill="currentColor"/>
+            </svg>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="itinerary-note reveal">
+        La fiesta comenzará puntualmente y queremos que disfrutes con nosotros cada detalle.<br>
+        <em>¡Te agradeceremos que llegues a tiempo!</em>
+      </p>
+    </section>
+
+    <!-- ─── SUGERENCIA DE REGALO ─── -->
+    <section class="section section-gift">
+      <h2 class="section-title cursive reveal">Sugerencia de Regalos</h2>
+      <p class="gift-text reveal">
+        Si deseas hacernos un regalo, puedes realizarlo mediante transferencia o escanear el código QR.
+      </p>
+
+      <div class="gift-cards reveal">
+
+        <!-- Banco Fie -->
+        <div class="gift-card">
+          <p class="bank-logo">🏦 Banco Fie</p>
+          <p class="gift-holder">Titular: <strong>Jose Mauricio Alvarez Lijeron</strong></p>
+          <p class="gift-account">Cuenta: <strong>40013967522</strong></p>
+          <img src="qr limpio .png" alt="QR Banco Fie" class="qr-img" />
+        </div>
+
+        <!-- Multicenter -->
+        <div class="gift-card gift-multicenter">
+          <div class="gift-multicenter-icon">
+            <!-- Caja de regalo minimalista -->
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" xmlns="http://www.w3.org/2000/svg">
+              <!-- caja -->
+              <rect x="6" y="22" width="36" height="22" rx="1"/>
+              <!-- tapa -->
+              <rect x="4" y="15" width="40" height="8" rx="1"/>
+              <!-- lazo vertical -->
+              <line x1="24" y1="15" x2="24" y2="44"/>
+              <!-- lazo horizontal en tapa -->
+              <line x1="4" y1="19" x2="44" y2="19"/>
+              <!-- moño izquierdo -->
+              <path d="M24 15 Q18 8 13 11 Q10 14 14 16 Q19 18 24 15Z"/>
+              <!-- moño derecho -->
+              <path d="M24 15 Q30 8 35 11 Q38 14 34 16 Q29 18 24 15Z"/>
+            </svg>
+          </div>
+          <p class="gift-multicenter-text">
+            ¿Prefieres elegir un regalo?<br>
+            Comunícate con nuestro equipo de Multicenter:
+          </p>
+          <a href="https://wa.me/59169000200" target="_blank" rel="noopener" class="whatsapp-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            +591 69000200
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── CONFIRMAR ASISTENCIA ─── -->
+    <section class="section section-rsvp">
+      <div class="rsvp-inner">
+        <div class="rsvp-deco-top">❧</div>
+        <h2 class="section-title cursive reveal">Confirma tu<br>Asistencia</h2>
+        <p class="rsvp-text reveal">
+          Será de mucha alegría para nosotros contar con tu compañía en este día tan importante.
+        </p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScj6UyWpQigXLBffzBkaK42s6RveJUdwNi6qplDzRCqAVYp2A/viewform?usp=header"
+           target="_blank" rel="noopener" class="rsvp-btn reveal">
+          <span class="rsvp-btn-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+              <path d="M16 3H8L2 7h20l-6-4z"/>
+              <path d="M12 12v4M10 14l2 2 2-2"/>
+            </svg>
+          </span>
+          <span>Confirmar Asistencia</span>
+        </a>
+        <div class="rsvp-deco-bottom">✦ ✦ ✦</div>
+      </div>
+    </section>
+
+    <!-- ─── FOOTER ─── -->
+    <footer class="footer">
+      <p class="footer-names cursive">Mauricio &amp; Ana Paola</p>
+      <p class="footer-date">05 · 09 · 2026</p>
+      <p class="footer-heart">♥</p>
+    </footer>
+
+  </main>
+
+  <!-- ─── BOTÓN MÚSICA FLOTANTE ─── -->
+  <div id="musicBtn" class="music-btn hidden" title="Música">
+    <audio id="bgMusic" loop>
+      <source src="cancion boda.mp3" type="audio/mpeg" />
+    </audio>
+    <svg class="music-icon music-icon-play" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M9 3v10.55A4 4 0 1 0 11 17V7h4V3H9z"/>
+    </svg>
+    <svg class="music-icon music-icon-pause hidden" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+    </svg>
+    <span class="music-waves">
+      <i></i><i></i><i></i><i></i>
+    </span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
