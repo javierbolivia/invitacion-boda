@@ -10,11 +10,18 @@ function getParam(name) {
 }
 
 function initGuest() {
-  const nombre    = getParam('nombre') || getParam('name') || 'Invitado Especial';
+  const nombre    = getParam('nombre') || getParam('name');
   const invitados = getParam('invitados') || getParam('pases') || '1';
   const nameEl    = document.getElementById('guestName');
   const countEl   = document.getElementById('guestCount');
-  if (nameEl)  nameEl.textContent  = decodeURIComponent(nombre).replace(/\+/g, ' ');
+
+  if (nameEl) {
+    if (nombre) {
+      nameEl.textContent = decodeURIComponent(nombre).replace(/\+/g, ' ');
+    } else {
+      nameEl.textContent = parseInt(invitados) >= 2 ? 'Invitados Especiales' : 'Invitado Especial';
+    }
+  }
   if (countEl) countEl.textContent = invitados;
 }
 
