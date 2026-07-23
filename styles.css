@@ -1617,8 +1617,8 @@ body {
 }
 
 .dresscode-item svg {
-  width: 70px;
-  height: 90px;
+  width: 80px;
+  height: 100px;
   stroke: var(--dark);
   transition: transform 0.4s ease;
 }
