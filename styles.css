@@ -1618,7 +1618,7 @@ body {
 
 .dresscode-item svg,
 .dresscode-item img {
-  width: 80px;
+  width: 100px;
   height: 100px;
   object-fit: contain;
   stroke: var(--dark);
@@ -1690,4 +1690,5 @@ body {
   height: 44px;
   object-fit: contain;
   display: block;
+  filter: brightness(0) saturate(100%) invert(20%) sepia(15%) saturate(500%) hue-rotate(90deg);
 }
