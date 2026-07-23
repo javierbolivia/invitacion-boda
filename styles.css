@@ -714,7 +714,8 @@ body {
 }
 
 .gift-multicenter {
-  background: linear-gradient(160deg, #1a1209 0%, #2c1f0e 50%, #1a1209 100%);
+  background: var(--cream);
+  border: 1px solid var(--gold-lt);
 }
 
 .gift-multicenter-icon {
@@ -724,7 +725,7 @@ body {
 .gift-multicenter-text {
   font-family: var(--font-serif);
   font-size: 1rem;
-  color: var(--gold-lt);
+  color: var(--mid);
   text-align: center;
   line-height: 1.6;
   font-style: italic;
@@ -735,18 +736,24 @@ body {
   align-items: center;
   gap: 0.5rem;
   padding: 0.8rem 1.8rem;
-  background: #25D366;
-  color: var(--white);
+  background: transparent;
+  border: 1px solid var(--gold);
+  color: var(--gold);
   font-family: var(--font-sans);
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 500;
+  letter-spacing: 0.1em;
   text-decoration: none;
-  border-radius: 2px;
-  transition: opacity 0.3s;
+  border-radius: 0;
+  transition: all 0.3s ease;
 }
 
-.whatsapp-btn:hover { opacity: 0.85; }
-.whatsapp-btn svg { width: 18px; height: 18px; }
+.whatsapp-btn:hover {
+  background: var(--gold);
+  color: var(--white);
+}
+
+.whatsapp-btn svg { width: 16px; height: 16px; fill: currentColor; }
 
 /* ============================================
    SECTION: RSVP
@@ -1054,6 +1061,10 @@ body {
   stroke: var(--gold);
   display: block;
   margin: 0 auto;
+}
+
+.gift-multicenter-icon {
+  margin-bottom: 0.5rem;
 }
 
 /* ============================================
