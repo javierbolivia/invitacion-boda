@@ -1504,3 +1504,87 @@ body {
   line-height: 1.8;
   text-shadow: 0 1px 6px rgba(0,0,0,0.4);
 }
+
+/* ============================================
+   SEPARADORES DECORATIVOS ANIMADOS
+   ============================================ */
+.deco-separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 1.5rem 0;
+  background: var(--dark);
+}
+
+.deco-separator.light {
+  background: var(--cream);
+}
+
+.deco-float {
+  font-size: 0.9rem;
+  color: var(--gold);
+  opacity: 0.7;
+  animation: floatDeco 3s ease-in-out infinite;
+  display: inline-block;
+}
+
+.deco-float.delay {
+  animation-delay: 1.5s;
+}
+
+.deco-line {
+  width: 40px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  opacity: 0.4;
+  animation: linePulse 3s ease-in-out infinite;
+}
+
+@keyframes linePulse {
+  0%, 100% { opacity: 0.2; width: 30px; }
+  50%       { opacity: 0.6; width: 50px; }
+}
+
+/* ============================================
+   PÉTALOS FLOTANTES
+   ============================================ */
+.petals {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.petal {
+  position: absolute;
+  font-size: 1rem;
+  color: var(--gold);
+  opacity: 0.15;
+  animation: fall linear infinite;
+}
+
+.petal.p1 { left: 10%; font-size: 0.8rem; animation-duration: 12s; animation-delay: 0s; }
+.petal.p2 { left: 30%; font-size: 1rem;   animation-duration: 15s; animation-delay: 2s; }
+.petal.p3 { left: 55%; font-size: 0.7rem; animation-duration: 11s; animation-delay: 4s; }
+.petal.p4 { left: 75%; font-size: 0.9rem; animation-duration: 14s; animation-delay: 1s; }
+.petal.p5 { left: 90%; font-size: 0.6rem; animation-duration: 13s; animation-delay: 3s; }
+
+@keyframes fall {
+  0%   { transform: translateY(-30px) rotate(0deg); opacity: 0; }
+  10%  { opacity: 0.2; }
+  90%  { opacity: 0.15; }
+  100% { transform: translateY(500px) rotate(360deg); opacity: 0; }
+}
+
+/* ============================================
+   SEPARADOR OSCURO – ajustes
+   ============================================ */
+.deco-separator:not(.light) .deco-float {
+  color: var(--gold-lt);
+}
+
+.deco-separator:not(.light) .deco-line {
+  background: linear-gradient(90deg, transparent, var(--gold-lt), transparent);
+}
