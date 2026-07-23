@@ -1616,9 +1616,11 @@ body {
   margin-bottom: 2rem;
 }
 
-.dresscode-item svg {
+.dresscode-item svg,
+.dresscode-item img {
   width: 80px;
   height: 100px;
+  object-fit: contain;
   stroke: var(--dark);
   transition: transform 0.4s ease;
 }
