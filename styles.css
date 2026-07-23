@@ -329,7 +329,7 @@ body {
    SECTION: COUNTDOWN
    ============================================ */
 .section-countdown {
-  background: var(--dark);
+  background: linear-gradient(160deg, #1a1209 0%, #2c1f0e 50%, #1a1209 100%);
   padding: 4rem 1.5rem;
 }
 
