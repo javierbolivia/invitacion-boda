@@ -48,7 +48,7 @@ body {
 .cover-overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at center, rgba(201,169,110,0.15) 0%, rgba(0,0,0,0.6) 100%);
+  background: radial-gradient(ellipse at center, rgba(201,169,110,0.1) 0%, rgba(0,0,0,0.65) 100%);
 }
 
 .cover-content {
@@ -714,7 +714,7 @@ body {
 }
 
 .gift-multicenter {
-  background: var(--dark);
+  background: linear-gradient(160deg, #1a1209 0%, #2c1f0e 50%, #1a1209 100%);
 }
 
 .gift-multicenter-icon {
@@ -793,7 +793,7 @@ body {
    FOOTER
    ============================================ */
 .footer {
-  background: #120e08;
+  background: linear-gradient(160deg, #0e0a04 0%, #1a1209 50%, #0e0a04 100%);
   text-align: center;
   padding: 3rem 1.5rem;
 }
