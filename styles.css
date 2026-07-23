@@ -1683,3 +1683,11 @@ body {
   max-width: 320px;
   margin: 0 auto;
 }
+
+/* GIFs en el timeline */
+.tl-gif {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  display: block;
+}
