@@ -1,4 +1,4 @@
-/* ============================================
+quiero que veas lo/* ============================================
    RESET & BASE
    ============================================ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -1513,12 +1513,12 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.8rem;
-  padding: 1.5rem 0;
-  background: var(--dark);
+  padding: 1.2rem 0;
+  background: transparent;
 }
 
 .deco-separator.light {
-  background: var(--cream);
+  background: transparent;
 }
 
 .deco-float {
@@ -1581,10 +1581,10 @@ body {
 /* ============================================
    SEPARADOR OSCURO – ajustes
    ============================================ */
-.deco-separator:not(.light) .deco-float {
-  color: var(--gold-lt);
+.deco-separator .deco-float {
+  color: var(--gold);
 }
 
-.deco-separator:not(.light) .deco-line {
-  background: linear-gradient(90deg, transparent, var(--gold-lt), transparent);
+.deco-separator .deco-line {
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
 }
