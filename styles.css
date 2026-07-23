@@ -454,7 +454,7 @@ body {
 }
 
 .section-event:nth-child(even) {
-  background: #f5efe6;
+  background: #eef4ee;
 }
 
 .event-card {
@@ -648,7 +648,7 @@ body {
    SECTION: REGALO
    ============================================ */
 .section-gift {
-  background: #f5efe6;
+  background: #eef4ee;
   padding: 5rem 1.5rem;
 }
 
@@ -714,7 +714,7 @@ body {
 }
 
 .gift-multicenter {
-  background: var(--cream);
+  background: #eef4ee;
   border: 1px solid var(--gold-lt);
 }
 
@@ -951,7 +951,7 @@ body {
    SECTION EVENT – variante alt (fondo distinto)
    ============================================ */
 .section-event.alt {
-  background: #f5efe6;
+  background: #eef4ee;
 }
 
 
