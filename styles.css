@@ -4,11 +4,11 @@ quiero que veas lo/* ============================================
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --gold:    #c9a96e;
-  --gold-lt: #e8d5b0;
-  --cream:   #fdf8f2;
-  --dark:    #2c2416;
-  --mid:     #7a6a52;
+  --gold:    #5a7a5a;
+  --gold-lt: #8aab8a;
+  --cream:   #f7faf7;
+  --dark:    #1e2e1e;
+  --mid:     #4a6450;
   --white:   #ffffff;
   --font-script: 'Great Vibes', cursive;
   --font-serif:  'Cormorant Garamond', serif;
@@ -34,7 +34,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #1a1209;
+  background: #1a2b1a;
   overflow: hidden;
   transition: opacity 0.8s ease, visibility 0.8s ease;
 }
@@ -48,7 +48,7 @@ body {
 .cover-overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at center, rgba(201,169,110,0.1) 0%, rgba(0,0,0,0.65) 100%);
+  background: radial-gradient(ellipse at center, rgba(90,122,90,0.1) 0%, rgba(0,0,0,0.65) 100%);
 }
 
 .cover-content {
@@ -329,7 +329,7 @@ body {
    SECTION: COUNTDOWN
    ============================================ */
 .section-countdown {
-  background: linear-gradient(160deg, #1a1209 0%, #2c1f0e 50%, #1a1209 100%);
+  background: linear-gradient(160deg, #1a2b1a 0%, #2a3d2a 50%, #1a2b1a 100%);
   padding: 4rem 1.5rem;
 }
 
@@ -800,7 +800,7 @@ body {
    FOOTER
    ============================================ */
 .footer {
-  background: linear-gradient(160deg, #0e0a04 0%, #1a1209 50%, #0e0a04 100%);
+  background: linear-gradient(160deg, #0e1a0e 0%, #1a2b1a 50%, #0e1a0e 100%);
   text-align: center;
   padding: 3rem 1.5rem;
 }
@@ -874,7 +874,7 @@ body {
    ============================================ */
 @media (min-width: 768px) {
   body {
-    background: #1a1209;
+    background: #1a2b1a;
   }
 
   .main {
@@ -1252,7 +1252,7 @@ body {
    RSVP MEJORADO
    ============================================ */
 .section-rsvp {
-  background: linear-gradient(160deg, #1a1209 0%, #2c1f0e 50%, #1a1209 100%);
+  background: linear-gradient(160deg, #1a2b1a 0%, #2a3d2a 50%, #1a2b1a 100%);
   padding: 6rem 1.5rem;
   position: relative;
   overflow: hidden;
@@ -1262,7 +1262,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at center, rgba(201,169,110,0.12) 0%, transparent 70%);
+  background: radial-gradient(ellipse at center, rgba(90,122,90,0.12) 0%, transparent 70%);
   pointer-events: none;
 }
 
