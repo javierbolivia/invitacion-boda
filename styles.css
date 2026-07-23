@@ -385,15 +385,15 @@ body {
    ============================================ */
 .section-passes {
   background: var(--cream);
-  padding: 3rem 1.5rem;
+  padding: 2rem 1rem;
 }
 
 .passes-card {
   display: inline-block;
   border: 1px solid var(--gold-lt);
-  padding: 2.5rem 2rem;
-  max-width: 380px;
-  width: calc(100% - 2rem);
+  padding: 2.5rem 1.5rem;
+  max-width: 320px;
+  width: calc(100% - 3rem);
   background: var(--white);
   box-shadow: 0 8px 40px rgba(201,169,110,0.12);
 }
