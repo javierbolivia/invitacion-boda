@@ -1692,3 +1692,22 @@ body {
   display: block;
   filter: brightness(0) saturate(100%) invert(20%) sepia(15%) saturate(500%) hue-rotate(90deg);
 }
+
+/* ============================================
+   IMAGEN WHATSAPP MULTICENTER
+   ============================================ */
+.whatsapp-img-link {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-img-link:hover {
+  transform: scale(1.05);
+}
+
+.whatsapp-img {
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
