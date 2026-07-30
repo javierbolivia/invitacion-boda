@@ -1960,9 +1960,8 @@ body {
 
 .side-img {
   position: absolute;
-  top: 0;
-  width: 70px;
-  max-height: 100%;
+  width: 160px;
+  height: 75%;
   object-fit: contain;
   pointer-events: none;
   z-index: 0;
@@ -1970,13 +1969,20 @@ body {
   transition: opacity 1.4s ease;
 }
 
-.side-img.left  { left: 0; }
-.side-img.right { right: 0; top: auto; bottom: 0; }
+.side-img.left  { left: -20px; top: 0; }
+.side-img.right { right: -20px; bottom: 0; }
 
 .side-img.reveal-side.visible {
-  opacity: 0.9;
+  opacity: 0.85;
+}
+
+.event-compact-row,
+.event-compact-title,
+.event-compact-divider {
+  position: relative;
+  z-index: 1;
 }
 
 @media (max-width: 380px) {
-  .side-img { width: 50px; }
+  .side-img { width: 110px; left: -15px; right: -15px; }
 }
