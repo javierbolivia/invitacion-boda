@@ -1950,3 +1950,33 @@ body {
 @media (max-width: 380px) {
   .side-flower { width: 35px; opacity: 0.25; }
 }
+
+/* ============================================
+   IMÁGENES DECORATIVAS LATERALES (ceremonia)
+   ============================================ */
+.section-events-compact {
+  position: relative;
+}
+
+.side-img {
+  position: absolute;
+  top: 0;
+  width: 70px;
+  max-height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 1.4s ease;
+}
+
+.side-img.left  { left: 0; }
+.side-img.right { right: 0; top: auto; bottom: 0; }
+
+.side-img.reveal-side.visible {
+  opacity: 0.9;
+}
+
+@media (max-width: 380px) {
+  .side-img { width: 50px; }
+}

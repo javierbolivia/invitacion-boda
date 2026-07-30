@@ -137,7 +137,7 @@ function animateNumber(el, newVal) {
 
 // ── REVEAL ON SCROLL ──────────────────────────
 function initReveal() {
-  const elements = document.querySelectorAll('.reveal, .reveal-text');
+  const elements = document.querySelectorAll('.reveal, .reveal-text, .reveal-side');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
