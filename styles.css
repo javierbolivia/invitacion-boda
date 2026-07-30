@@ -682,8 +682,16 @@ body {
   margin: 0 auto;
 }
 
+.gift-icon-top svg {
+  width: 44px;
+  height: 44px;
+  stroke: var(--gold);
+  display: block;
+  margin: 0 auto 0.8rem;
+}
+
 .gift-multicenter-logo {
-  max-width: 160px;
+  max-width: 150px;
   height: auto;
   display: block;
   margin: 0 auto 1.2rem;
@@ -696,6 +704,7 @@ body {
   background: var(--white);
   border: 1px solid var(--gold-lt);
   padding: 10px;
+  margin-top: 1rem;
 }
 
 .gift-divider {
@@ -729,6 +738,8 @@ body {
 .ver-mesa-btn {
   display: inline-block;
   padding: 0.9rem 2.2rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.8rem;
   border: 1px solid var(--gold);
   color: var(--gold);
   font-family: var(--font-sans);
