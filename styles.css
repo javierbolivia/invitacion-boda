@@ -1953,7 +1953,7 @@ body {
 
 /* ============================================
    IMÁGENES DECORATIVAS LATERALES (ceremonia)
-   Mobile First – Premium Responsive
+   Mobile First – Premium Adaptive
    ============================================ */
 .section-events-compact {
   position: relative;
@@ -1967,84 +1967,88 @@ body {
   z-index: 0;
   opacity: 0;
   transform: scale(0.96);
-  transition: none;
+  will-change: opacity, transform;
 }
 
-/* ─── BASE MOBILE (320px+) ─── */
+/* ─── BASE MOBILE 320px+ ─── */
 .side-img.left {
-  left: -4px;
-  top: -4px;
-  width: clamp(120px, 38vw, 180px);
+  top: 0;
+  left: 0;
+  width: clamp(130px, 42vw, 200px);
+  height: auto;
   object-position: top left;
   transform-origin: top left;
-  transform: scale(0.96) translate(-8px, -8px);
+  transform: scale(0.96) translate(-10px, -10px);
 }
 
 .side-img.right {
-  right: -4px;
-  bottom: -4px;
-  width: clamp(110px, 34vw, 160px);
+  bottom: 0;
+  right: 0;
+  width: clamp(120px, 38vw, 180px);
+  height: auto;
   object-position: bottom right;
   transform-origin: bottom right;
-  transform: scale(0.96) translate(8px, 8px);
+  transform: scale(0.96) translate(10px, 10px);
 }
 
-/* Animación al entrar en viewport */
+/* Animación premium — activada por Intersection Observer */
 .side-img.reveal-side.visible {
-  opacity: 0.55;
+  opacity: 0.6;
   transform: scale(1) translate(0, 0);
   transition:
-    opacity 920ms cubic-bezier(0.22, 1, 0.36, 1),
-    transform 920ms cubic-bezier(0.22, 1, 0.36, 1);
+    opacity 960ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 960ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 /* Contenido siempre por encima */
-.event-compact-row,
-.event-compact-title,
-.event-compact-divider {
+.section-events-compact .event-compact-row,
+.section-events-compact .event-compact-title,
+.section-events-compact .event-compact-divider {
   position: relative;
   z-index: 1;
 }
 
-/* Respetar preferencia de movimiento reducido */
+/* Movimiento reducido */
 @media (prefers-reduced-motion: reduce) {
+  .side-img {
+    transform: scale(1) translate(0, 0) !important;
+  }
   .side-img.reveal-side.visible {
-    transform: scale(1) translate(0, 0);
-    transition: opacity 350ms ease;
+    transition: opacity 300ms ease;
   }
 }
 
-/* ─── 376px+ (móviles medianos) ─── */
-@media (min-width: 376px) {
-  .side-img.left  { width: clamp(130px, 40vw, 190px); left: -6px; }
-  .side-img.right { width: clamp(120px, 36vw, 170px); right: -6px; }
-  .side-img.reveal-side.visible { opacity: 0.6; }
+/* ─── 390px+ (iPhone 14, Pixel 7) ─── */
+@media (min-width: 390px) {
+  .side-img.left  { width: clamp(140px, 44vw, 210px); }
+  .side-img.right { width: clamp(130px, 40vw, 190px); }
+  .side-img.reveal-side.visible { opacity: 0.63; }
 }
 
 /* ─── 412px+ (Android estándar) ─── */
 @media (min-width: 412px) {
-  .side-img.left  { width: clamp(140px, 42vw, 200px); }
-  .side-img.right { width: clamp(130px, 38vw, 180px); }
-  .side-img.reveal-side.visible { opacity: 0.65; }
+  .side-img.left  { width: clamp(150px, 45vw, 220px); }
+  .side-img.right { width: clamp(140px, 42vw, 200px); }
+  .side-img.reveal-side.visible { opacity: 0.66; }
 }
 
-/* ─── 480px+ (móviles grandes / landscape) ─── */
+/* ─── 480px+ (grandes / landscape) ─── */
 @media (min-width: 480px) {
-  .side-img.left  { width: clamp(150px, 40vw, 210px); left: -8px; top: -6px; }
-  .side-img.right { width: clamp(140px, 36vw, 190px); right: -8px; bottom: -6px; }
-  .side-img.reveal-side.visible { opacity: 0.68; }
+  .side-img.left  { width: clamp(160px, 42vw, 230px); }
+  .side-img.right { width: clamp(150px, 38vw, 210px); }
+  .side-img.reveal-side.visible { opacity: 0.7; }
 }
 
 /* ─── 768px+ (tablets) ─── */
 @media (min-width: 768px) {
-  .side-img.left  { width: clamp(160px, 30vw, 220px); left: -10px; top: -8px; }
-  .side-img.right { width: clamp(150px, 28vw, 200px); right: -10px; bottom: -8px; }
-  .side-img.reveal-side.visible { opacity: 0.72; }
+  .side-img.left  { width: min(240px, 32vw); }
+  .side-img.right { width: min(220px, 30vw); }
+  .side-img.reveal-side.visible { opacity: 0.74; }
 }
 
 /* ─── 1024px+ (desktop) ─── */
 @media (min-width: 1024px) {
-  .side-img.left  { width: 220px; left: -12px; top: -10px; }
-  .side-img.right { width: 200px; right: -12px; bottom: -10px; }
+  .side-img.left  { width: 240px; left: -8px; }
+  .side-img.right { width: 220px; right: -8px; }
   .side-img.reveal-side.visible { opacity: 0.78; }
 }
