@@ -1972,9 +1972,9 @@ body {
 
 /* ─── BASE MOBILE 320px+ ─── */
 .side-img.left {
-  top: 0;
-  left: 0;
-  width: clamp(130px, 42vw, 200px);
+  top: -12px;
+  left: -12px;
+  width: clamp(220px, 72vw, 340px);
   height: auto;
   object-position: top left;
   transform-origin: top left;
@@ -1982,9 +1982,9 @@ body {
 }
 
 .side-img.right {
-  bottom: 0;
-  right: 0;
-  width: clamp(120px, 38vw, 180px);
+  bottom: -12px;
+  right: -12px;
+  width: clamp(200px, 65vw, 310px);
   height: auto;
   object-position: bottom right;
   transform-origin: bottom right;
@@ -1993,7 +1993,7 @@ body {
 
 /* Animación premium — activada por Intersection Observer */
 .side-img.reveal-side.visible {
-  opacity: 0.6;
+  opacity: 0.58;
   transform: scale(1) translate(0, 0);
   transition:
     opacity 960ms cubic-bezier(0.22, 1, 0.36, 1),
@@ -2018,37 +2018,51 @@ body {
   }
 }
 
+/* ─── 375px+ (iPhone SE, iPhone 13 mini) ─── */
+@media (min-width: 375px) {
+  .side-img.left  { width: clamp(230px, 74vw, 350px); }
+  .side-img.right { width: clamp(210px, 67vw, 320px); }
+  .side-img.reveal-side.visible { opacity: 0.6; }
+}
+
 /* ─── 390px+ (iPhone 14, Pixel 7) ─── */
 @media (min-width: 390px) {
-  .side-img.left  { width: clamp(140px, 44vw, 210px); }
-  .side-img.right { width: clamp(130px, 40vw, 190px); }
-  .side-img.reveal-side.visible { opacity: 0.63; }
+  .side-img.left  { width: clamp(240px, 75vw, 360px); }
+  .side-img.right { width: clamp(220px, 68vw, 330px); }
+  .side-img.reveal-side.visible { opacity: 0.62; }
 }
 
 /* ─── 412px+ (Android estándar) ─── */
 @media (min-width: 412px) {
-  .side-img.left  { width: clamp(150px, 45vw, 220px); }
-  .side-img.right { width: clamp(140px, 42vw, 200px); }
+  .side-img.left  { width: clamp(250px, 76vw, 370px); }
+  .side-img.right { width: clamp(230px, 70vw, 340px); }
+  .side-img.reveal-side.visible { opacity: 0.64; }
+}
+
+/* ─── 430px+ (iPhone 14 Pro Max, grandes) ─── */
+@media (min-width: 430px) {
+  .side-img.left  { width: clamp(260px, 74vw, 380px); }
+  .side-img.right { width: clamp(240px, 68vw, 350px); }
   .side-img.reveal-side.visible { opacity: 0.66; }
 }
 
-/* ─── 480px+ (grandes / landscape) ─── */
+/* ─── 480px+ (landscape / phablets) ─── */
 @media (min-width: 480px) {
-  .side-img.left  { width: clamp(160px, 42vw, 230px); }
-  .side-img.right { width: clamp(150px, 38vw, 210px); }
-  .side-img.reveal-side.visible { opacity: 0.7; }
+  .side-img.left  { width: clamp(270px, 70vw, 390px); left: -14px; }
+  .side-img.right { width: clamp(250px, 64vw, 360px); right: -14px; }
+  .side-img.reveal-side.visible { opacity: 0.68; }
 }
 
 /* ─── 768px+ (tablets) ─── */
 @media (min-width: 768px) {
-  .side-img.left  { width: min(240px, 32vw); }
-  .side-img.right { width: min(220px, 30vw); }
-  .side-img.reveal-side.visible { opacity: 0.74; }
+  .side-img.left  { width: min(380px, 50vw); left: -16px; top: -14px; }
+  .side-img.right { width: min(350px, 46vw); right: -16px; bottom: -14px; }
+  .side-img.reveal-side.visible { opacity: 0.72; }
 }
 
 /* ─── 1024px+ (desktop) ─── */
 @media (min-width: 1024px) {
-  .side-img.left  { width: 240px; left: -8px; }
-  .side-img.right { width: 220px; right: -8px; }
-  .side-img.reveal-side.visible { opacity: 0.78; }
+  .side-img.left  { width: 400px; left: -18px; top: -16px; }
+  .side-img.right { width: 370px; right: -18px; bottom: -16px; }
+  .side-img.reveal-side.visible { opacity: 0.76; }
 }
