@@ -1900,3 +1900,53 @@ body {
   width: 14px;
   height: 14px;
 }
+
+/* ============================================
+   FLORES DECORATIVAS LATERALES
+   ============================================ */
+.section-events-compact {
+  position: relative;
+}
+
+.side-flower {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  opacity: 0.35;
+  z-index: 0;
+}
+
+.side-flower svg {
+  width: 100%;
+  height: 90%;
+  stroke: var(--gold);
+  transform-origin: bottom center;
+}
+
+.side-flower.left {
+  left: -5px;
+  animation: swayLeft 6s ease-in-out infinite;
+}
+
+.side-flower.right {
+  right: -5px;
+  animation: swayRight 6s ease-in-out infinite;
+}
+
+@keyframes swayLeft {
+  0%, 100% { transform: rotate(-2deg); }
+  50%       { transform: rotate(2deg); }
+}
+
+@keyframes swayRight {
+  0%, 100% { transform: rotate(2deg); }
+  50%       { transform: rotate(-2deg); }
+}
+
+@media (max-width: 380px) {
+  .side-flower { width: 35px; opacity: 0.25; }
+}
