@@ -682,6 +682,13 @@ body {
   margin: 0 auto;
 }
 
+.gift-multicenter-logo {
+  max-width: 160px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1.2rem;
+}
+
 .qr-img-solo {
   width: 200px;
   height: 200px;
