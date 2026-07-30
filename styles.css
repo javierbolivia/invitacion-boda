@@ -2066,3 +2066,85 @@ body {
   .side-img.right { width: 370px; right: -18px; bottom: -16px; }
   .side-img.reveal-side.visible { opacity: 0.76; }
 }
+
+
+/* ============================================================
+   MOBILE-ONLY: OPTIMIZACIÓN DE RITMO VERTICAL
+   Aplica exclusivamente a 320–480px.
+   No afecta tablet ni desktop.
+   Reduce únicamente espacios muertos, sin tocar
+   colores, tipografías, iconos, imágenes ni estructura.
+   ============================================================ */
+@media (max-width: 480px) {
+
+  /* ── Cover ── */
+  .cover-content   { padding: 1.5rem; }
+  .cover-pre       { margin-bottom: 0.9rem; }
+  .cover-date      { margin-bottom: 1.3rem; }
+  .cover-divider   { margin: 0 auto 1.3rem; }
+
+  /* ── Hero ── */
+  .section-hero { min-height: 68vh; }
+  .hero-text    { padding: 2rem 1.5rem; }
+  .hero-nos     { margin-bottom: 0.7rem; }
+
+  /* ── Guarda la fecha ── */
+  .tagline { margin-top: 0.7rem; }
+
+  /* ── Countdown ── */
+  .section-countdown { padding: 1.4rem 1.5rem; }
+
+  /* ── Pases ── */
+  .section-passes  { padding: 0.8rem 1rem; }
+  .passes-card     { padding: 1.7rem 1.2rem; }
+  .passes-pre      { margin-bottom: 1rem; }
+  .passes-name     { margin-bottom: 1rem; }
+  .passes-divider  { margin: 0 auto 1rem; }
+
+  /* ── Ceremonia + Recepción (compacto) ── */
+  .section-events-compact          { padding: 1.6rem 1.5rem; }
+  .event-compact-title             { margin-bottom: 0.35rem; }
+  .event-compact-title:not(:first-child) { margin-top: 1.7rem; }
+  .event-compact-divider           { margin-bottom: 1rem; }
+  .event-compact-row               { gap: 0.8rem; }
+  .event-compact-place             { margin-bottom: 0.3rem; }
+  .event-compact-time              { margin-bottom: 0.3rem; }
+
+  /* ── Nosotros ── */
+  .nosotros-grid { gap: 0.7rem; }
+  .nosotros-row  { gap: 0.6rem; }
+
+  /* ── Dress Code ── */
+  .dresscode-icons { margin-bottom: 0.9rem; }
+  .dresscode-label { margin-bottom: 0.7rem; }
+
+  /* ── Sin niños ── */
+  .nokids-icon { margin-bottom: 0.7rem; }
+
+  /* ── Itinerario ── */
+  .timeline  { margin: 0 auto 2rem; padding: 0.7rem 0; }
+  .tl-item   { margin-bottom: 1.8rem; }
+
+  /* ── Regalos ── */
+  .gift-text        { margin-bottom: 1rem; }
+  .gift-divider      { margin: 1.2rem 0; }
+  .ver-mesa-btn      { margin-top: 0.9rem; margin-bottom: 1.2rem; }
+  .gift-multicenter-logo { margin-bottom: 0.9rem; }
+
+  /* ── Confirmar asistencia ── */
+  .section-rsvp     { padding: 2.2rem 1.5rem; }
+  .rsvp-deco-top    { margin-bottom: 1rem; }
+  .rsvp-text        { margin-bottom: 1.6rem; }
+  .rsvp-deco-bottom { margin-top: 1.6rem; }
+
+  /* ── Cierre final ── */
+  .section-final { min-height: 58vh; }
+  .final-text    { padding: 2rem 1.5rem; }
+
+  /* ── Footer ── */
+  .footer      { padding: 2rem 1.5rem; }
+  .footer-date { margin-bottom: 0.7rem; }
+
+  /* ── Separadores decorativos ── */
+  .deco-separator { padding: 0.3rem 0; }
+}
