@@ -671,6 +671,73 @@ body {
   margin: 0 auto;
 }
 
+/* ============================================
+   REGALO – SOLO QR + MULTICENTER
+   ============================================ */
+.gift-single {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.qr-img-solo {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  background: var(--white);
+  border: 1px solid var(--gold-lt);
+  padding: 10px;
+}
+
+.gift-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+  max-width: 220px;
+  margin: 1.8rem 0;
+}
+
+.gift-divider-line {
+  flex: 1;
+  height: 1px;
+  background: var(--gold-lt);
+}
+
+.gift-divider-heart {
+  color: var(--gold);
+  font-size: 0.9rem;
+}
+
+.gift-multicenter-label {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--dark);
+  margin-bottom: 1rem;
+}
+
+.ver-mesa-btn {
+  display: inline-block;
+  padding: 0.9rem 2.2rem;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.ver-mesa-btn:hover {
+  background: var(--gold);
+  color: var(--white);
+}
+
 .gift-card {
   background: var(--white);
   border: 1px solid var(--gold-lt);
@@ -1710,4 +1777,108 @@ body {
   width: 100%;
   height: auto;
   display: block;
+}
+
+/* ============================================
+   CEREMONIA + RECEPCIÓN – FORMATO COMPACTO
+   ============================================ */
+.section-events-compact {
+  background: var(--white);
+  padding: 2.5rem 1.5rem;
+}
+
+.event-compact-title {
+  font-size: clamp(2rem, 7vw, 2.6rem);
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+}
+
+.event-compact-title:not(:first-child) {
+  margin-top: 2.5rem;
+}
+
+.event-compact-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.event-compact-divider span:not(.hd) {
+  width: 50px;
+  height: 1px;
+  background: var(--gold);
+  opacity: 0.5;
+}
+
+.event-compact-divider .hd {
+  font-size: 0.7rem;
+  color: var(--gold);
+}
+
+.event-compact-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 320px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.event-compact-icon svg {
+  width: 48px;
+  height: 48px;
+  stroke: var(--dark);
+  flex-shrink: 0;
+}
+
+.event-compact-sep {
+  width: 1px;
+  height: 55px;
+  background: var(--gold-lt);
+  flex-shrink: 0;
+}
+
+.event-compact-info {
+  flex: 1;
+}
+
+.event-compact-place {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--mid);
+  line-height: 1.4;
+  margin-bottom: 0.4rem;
+}
+
+.event-compact-place strong {
+  font-style: italic;
+  color: var(--dark);
+}
+
+.event-compact-time {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: var(--dark);
+  margin-bottom: 0.4rem;
+}
+
+.event-compact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: var(--font-serif);
+  font-size: 0.75rem;
+  font-style: italic;
+  color: var(--gold);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.event-compact-link svg {
+  width: 14px;
+  height: 14px;
 }
