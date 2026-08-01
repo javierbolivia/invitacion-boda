@@ -43,7 +43,7 @@ function initMusic() {
   const waves   = btn.querySelector('.music-waves');
   let playing = false;
 
-  btn.addEventListener('click', () => {
+  function toggleMusic() {
     if (!playing) {
       audio.play().then(() => {
         playing = true;
@@ -59,6 +59,14 @@ function initMusic() {
       iconPause.classList.add('hidden');
       waves.classList.remove('active');
       btn.classList.remove('playing');
+    }
+  }
+
+  btn.addEventListener('click', toggleMusic);
+  btn.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      toggleMusic();
     }
   });
 
@@ -174,26 +182,23 @@ function initTimeline() {
   items.forEach(item => observer.observe(item));
 }
 
-// ── ANIMACIÓN ICONOS ITINERARIO ───────────────
-function initIconPulse() {
-  const icons = document.querySelectorAll('.tl-icon svg');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('icon-pop');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.5 });
-  icons.forEach(icon => observer.observe(icon));
-}
-
 // ── PARALLAX HERO ─────────────────────────────
 function initParallax() {
   const hero = document.querySelector('.hero-photo');
   if (!hero) return;
+
+  // Respeta prefers-reduced-motion
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  let ticking = false;
   window.addEventListener('scroll', () => {
-    hero.style.transform = `translateY(${window.scrollY * 0.2}px)`;
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        hero.style.transform = `translateY(${window.scrollY * 0.2}px)`;
+        ticking = false;
+      });
+      ticking = true;
+    }
   }, { passive: true });
 }
 
