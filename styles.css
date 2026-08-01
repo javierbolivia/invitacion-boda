@@ -240,6 +240,7 @@ img {
 
 .big-day {
   font-family: var(--font-serif);
+  white-space: nowrap;
   font-size: clamp(2.2rem, 9vw, 4.5rem);
   font-weight: 300;
   color: var(--dark);
@@ -248,6 +249,7 @@ img {
 
 .big-day-month {
   font-family: var(--font-serif);
+  white-space: nowrap;
   font-size: clamp(1.6rem, 7vw, 3rem);
   font-weight: 300;
   color: var(--dark);
