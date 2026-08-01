@@ -219,10 +219,11 @@ body {
 
 .big-day {
   font-family: var(--font-serif);
-  font-size: clamp(5rem, 20vw, 9rem);
+  font-size: clamp(2.8rem, 11vw, 5rem);
   font-weight: 300;
   color: var(--dark);
   line-height: 1;
+  white-space: nowrap;
 }
 
 .big-month {
