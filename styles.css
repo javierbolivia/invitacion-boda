@@ -223,6 +223,14 @@ body {
   font-weight: 300;
   color: var(--dark);
   line-height: 1;
+}
+
+.big-day-month {
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 7vw, 3rem);
+  font-weight: 300;
+  color: var(--dark);
+  line-height: 1;
   white-space: nowrap;
 }
 
